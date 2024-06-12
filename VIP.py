@@ -3,6 +3,9 @@ from mnemonic import Mnemonic
 import bip32utils
 import requests
 import threading
+import os
+
+webhook_url = os.getenv('DISCORD_WEBHOOK_URL')
 
 # Biến toàn cục để đếm số lượng ví
 total_wallets_checked = 0
